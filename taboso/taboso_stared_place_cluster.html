@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8f4b778e583c47accb39ad005ba8116f {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8f4b778e583c47accb39ad005ba8116f" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8f4b778e583c47accb39ad005ba8116f = L.map(
+                "map_8f4b778e583c47accb39ad005ba8116f",
+                {
+                    center: [36.03, 129.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 13,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_3696095c1f23ab46ef8321d0ee6b4f99 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var marker_ecf94cbf17c0bccb92af2fee296b8401 = L.marker(
+                [36.01899, 129.323032],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_c87e8ba64a95ded87f4f54bd97e2fb88 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_ecf94cbf17c0bccb92af2fee296b8401.setIcon(icon_c87e8ba64a95ded87f4f54bd97e2fb88);
+        
+    
+        var popup_821652e8eaf1ae9ab3b59da09f0cdadf = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_8b61a169d15f6e1b458d86d2b2fc561d = $(`<div id="html_8b61a169d15f6e1b458d86d2b2fc561d" style="width: 100.0%; height: 100.0%;">정류장: 대학체육관 주차장 <br> 주 소: 경상북도 포항시 남구 지곡동 295</div>`)[0];
+                popup_821652e8eaf1ae9ab3b59da09f0cdadf.setContent(html_8b61a169d15f6e1b458d86d2b2fc561d);
+            
+        
+
+        marker_ecf94cbf17c0bccb92af2fee296b8401.bindPopup(popup_821652e8eaf1ae9ab3b59da09f0cdadf)
+        ;
+
+        
+    
+    
+            var marker_47517e5804079818b4e837a2c31a4079 = L.marker(
+                [36.01238, 129.31938],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_f74ee0290ea988a903241212f5d2ab28 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_47517e5804079818b4e837a2c31a4079.setIcon(icon_f74ee0290ea988a903241212f5d2ab28);
+        
+    
+        var popup_17e3a36bbe7b2f50209a50d6fb25f31f = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_d1021881ee2cc621b7600b8766877c52 = $(`<div id="html_d1021881ee2cc621b7600b8766877c52" style="width: 100.0%; height: 100.0%;">정류장: 환경공학동 <br> 주 소: 경상북도 포항시 남구 효자동 산27</div>`)[0];
+                popup_17e3a36bbe7b2f50209a50d6fb25f31f.setContent(html_d1021881ee2cc621b7600b8766877c52);
+            
+        
+
+        marker_47517e5804079818b4e837a2c31a4079.bindPopup(popup_17e3a36bbe7b2f50209a50d6fb25f31f)
+        ;
+
+        
+    
+    
+            var marker_cd1f930c9e4d898c0e59880f8f788c41 = L.marker(
+                [36.00843, 129.32376],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_add2eed041cb3f7f2184310c9d1c9d62 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_cd1f930c9e4d898c0e59880f8f788c41.setIcon(icon_add2eed041cb3f7f2184310c9d1c9d62);
+        
+    
+        var popup_6a3c85a4f87052f42d4c406277656e75 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_7a5f40a08fa2bbc5c84dcc16983ed3ab = $(`<div id="html_7a5f40a08fa2bbc5c84dcc16983ed3ab" style="width: 100.0%; height: 100.0%;">정류장: RIST식당 <br> 주 소: 경상북도 포항시 남구 효자동 444</div>`)[0];
+                popup_6a3c85a4f87052f42d4c406277656e75.setContent(html_7a5f40a08fa2bbc5c84dcc16983ed3ab);
+            
+        
+
+        marker_cd1f930c9e4d898c0e59880f8f788c41.bindPopup(popup_6a3c85a4f87052f42d4c406277656e75)
+        ;
+
+        
+    
+    
+            var marker_4f1f149bb7a6c9ba60a94e17ad4a6c86 = L.marker(
+                [36.01007, 129.32139],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_f45866d51dd1f35a080dff8d1a08f3d4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_4f1f149bb7a6c9ba60a94e17ad4a6c86.setIcon(icon_f45866d51dd1f35a080dff8d1a08f3d4);
+        
+    
+        var popup_3f4e30a57709bcea0e57bce15447779e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_81f528bae906dff3e4305903dbc33db6 = $(`<div id="html_81f528bae906dff3e4305903dbc33db6" style="width: 100.0%; height: 100.0%;">정류장: 인공지능연구원 <br> 주 소: 경상북도 포항시 남구 효자동 산27</div>`)[0];
+                popup_3f4e30a57709bcea0e57bce15447779e.setContent(html_81f528bae906dff3e4305903dbc33db6);
+            
+        
+
+        marker_4f1f149bb7a6c9ba60a94e17ad4a6c86.bindPopup(popup_3f4e30a57709bcea0e57bce15447779e)
+        ;
+
+        
+    
+    
+            var marker_f891a05722331a605176da414e4ce2dc = L.marker(
+                [36.02254, 129.31687],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_2422e796e412c8ca45f56b5906c69e5f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_f891a05722331a605176da414e4ce2dc.setIcon(icon_2422e796e412c8ca45f56b5906c69e5f);
+        
+    
+        var popup_2bba27f2564ab9415f5361a90afd708e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_a711ec42e076edd605ab8c37c02ae47e = $(`<div id="html_a711ec42e076edd605ab8c37c02ae47e" style="width: 100.0%; height: 100.0%;">정류장: 가속기행정동 <br> 주 소: 경상북도 포항시 남구 지곡동 703</div>`)[0];
+                popup_2bba27f2564ab9415f5361a90afd708e.setContent(html_a711ec42e076edd605ab8c37c02ae47e);
+            
+        
+
+        marker_f891a05722331a605176da414e4ce2dc.bindPopup(popup_2bba27f2564ab9415f5361a90afd708e)
+        ;
+
+        
+    
+    
+            var marker_77ed38c3e83b3c27d4f508b37acd78b8 = L.marker(
+                [36.035127, 129.314521],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_95e3e146fb7f95b62fd911b574f97399 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_77ed38c3e83b3c27d4f508b37acd78b8.setIcon(icon_95e3e146fb7f95b62fd911b574f97399);
+        
+    
+        var popup_07c61c228020ece7fbc206e877ed47d2 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_751b0e7fd015e89d49e18e60b85d368c = $(`<div id="html_751b0e7fd015e89d49e18e60b85d368c" style="width: 100.0%; height: 100.0%;">정류장: 테크노파크 주차장 <br> 주 소: 경상북도 포항시 남구 지곡동 산116</div>`)[0];
+                popup_07c61c228020ece7fbc206e877ed47d2.setContent(html_751b0e7fd015e89d49e18e60b85d368c);
+            
+        
+
+        marker_77ed38c3e83b3c27d4f508b37acd78b8.bindPopup(popup_07c61c228020ece7fbc206e877ed47d2)
+        ;
+
+        
+    
+    
+            var marker_4f30a2205305a78d8cf4c7dc384cfc33 = L.marker(
+                [36.02017, 129.31996],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_9923f9b1ac776e8e800efd36dab9def2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_4f30a2205305a78d8cf4c7dc384cfc33.setIcon(icon_9923f9b1ac776e8e800efd36dab9def2);
+        
+    
+        var popup_460f64dbfa03aa1942203b6ef824c711 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_c54a58765c849417f0ca6baa1b585b56 = $(`<div id="html_c54a58765c849417f0ca6baa1b585b56" style="width: 100.0%; height: 100.0%;">정류장: 포항공과대학교 연구실험단지 <br> 주 소: 경상북도 포항시 남구 지곡동 934</div>`)[0];
+                popup_460f64dbfa03aa1942203b6ef824c711.setContent(html_c54a58765c849417f0ca6baa1b585b56);
+            
+        
+
+        marker_4f30a2205305a78d8cf4c7dc384cfc33.bindPopup(popup_460f64dbfa03aa1942203b6ef824c711)
+        ;
+
+        
+    
+    
+            var marker_6c5c15e6c8f2cedc42d8f18d2398bbe5 = L.marker(
+                [36.01738, 129.32898],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_c11a0183fdc9e32b67d31d90c29baa80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6c5c15e6c8f2cedc42d8f18d2398bbe5.setIcon(icon_c11a0183fdc9e32b67d31d90c29baa80);
+        
+    
+        var popup_19ee30fe0e935fd39f903f9e8eb5e938 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_9e6ddb6f28d22674cfeabe4d0c9349fb = $(`<div id="html_9e6ddb6f28d22674cfeabe4d0c9349fb" style="width: 100.0%; height: 100.0%;">정류장: 포스코 인재창조원 <br> 주 소: 경상북도 포항시 남구 지곡동 74-3</div>`)[0];
+                popup_19ee30fe0e935fd39f903f9e8eb5e938.setContent(html_9e6ddb6f28d22674cfeabe4d0c9349fb);
+            
+        
+
+        marker_6c5c15e6c8f2cedc42d8f18d2398bbe5.bindPopup(popup_19ee30fe0e935fd39f903f9e8eb5e938)
+        ;
+
+        
+    
+    
+            var marker_6674a1f9e43a794e87f5ac1286756b97 = L.marker(
+                [36.01565, 129.32188],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_8c221efb83884ff7a23a91267750d90b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_6674a1f9e43a794e87f5ac1286756b97.setIcon(icon_8c221efb83884ff7a23a91267750d90b);
+        
+    
+        var popup_7e09a66e63692d4fd699f58bcd648b1d = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_41eabc56143a56db09c4120e8701b6a4 = $(`<div id="html_41eabc56143a56db09c4120e8701b6a4" style="width: 100.0%; height: 100.0%;">정류장: 지곡회관 <br> 주 소: 경상북도 포항시 남구 지곡동 151-2</div>`)[0];
+                popup_7e09a66e63692d4fd699f58bcd648b1d.setContent(html_41eabc56143a56db09c4120e8701b6a4);
+            
+        
+
+        marker_6674a1f9e43a794e87f5ac1286756b97.bindPopup(popup_7e09a66e63692d4fd699f58bcd648b1d)
+        ;
+
+        
+    
+    
+            var marker_60cd6391cc5643b5b6110452d6ad4fcd = L.marker(
+                [36.01393, 129.32124],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_b940e8cd0db29b2671f323b7fef65b46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_60cd6391cc5643b5b6110452d6ad4fcd.setIcon(icon_b940e8cd0db29b2671f323b7fef65b46);
+        
+    
+        var popup_999cd9dae8cd5d2712d56f65b0621f4d = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_93a08adef5e7557f1a7131e9ac51fc1a = $(`<div id="html_93a08adef5e7557f1a7131e9ac51fc1a" style="width: 100.0%; height: 100.0%;">정류장: 포스코국제관 <br> 주 소: 경상북도 포항시 남구 지곡동 산260-1</div>`)[0];
+                popup_999cd9dae8cd5d2712d56f65b0621f4d.setContent(html_93a08adef5e7557f1a7131e9ac51fc1a);
+            
+        
+
+        marker_60cd6391cc5643b5b6110452d6ad4fcd.bindPopup(popup_999cd9dae8cd5d2712d56f65b0621f4d)
+        ;
+
+        
+    
+    
+            var marker_0125ca2396b1386bcdbebc6e174cba7e = L.marker(
+                [36.027674, 129.311972],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_ec65cf58ece0d2d136f777fb55c7499c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_0125ca2396b1386bcdbebc6e174cba7e.setIcon(icon_ec65cf58ece0d2d136f777fb55c7499c);
+        
+    
+        var popup_b5de046a803490f360555b1a05cf5ad2 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_c942eff45e5113293a8d218fc2b8a237 = $(`<div id="html_c942eff45e5113293a8d218fc2b8a237" style="width: 100.0%; height: 100.0%;">정류장: 4세대가속기 <br> 주 소: 경상북도 포항시 남구 지곡로127번길 79</div>`)[0];
+                popup_b5de046a803490f360555b1a05cf5ad2.setContent(html_c942eff45e5113293a8d218fc2b8a237);
+            
+        
+
+        marker_0125ca2396b1386bcdbebc6e174cba7e.bindPopup(popup_b5de046a803490f360555b1a05cf5ad2)
+        ;
+
+        
+    
+    
+            var marker_8593ea4e29e26f2a6ab3b90b5dda6164 = L.marker(
+                [36.02254, 129.31687],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_4c12bf6ed00d77a7d0a084c244799b9f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_8593ea4e29e26f2a6ab3b90b5dda6164.setIcon(icon_4c12bf6ed00d77a7d0a084c244799b9f);
+        
+    
+        var popup_1d328358c505c7f55f1769721b0234e9 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_2afbd184229aafbe3272fd8d6902f7d0 = $(`<div id="html_2afbd184229aafbe3272fd8d6902f7d0" style="width: 100.0%; height: 100.0%;">정류장: 가속기행정동 <br> 주 소: 경상북도 포항시 남구 지곡동 703</div>`)[0];
+                popup_1d328358c505c7f55f1769721b0234e9.setContent(html_2afbd184229aafbe3272fd8d6902f7d0);
+            
+        
+
+        marker_8593ea4e29e26f2a6ab3b90b5dda6164.bindPopup(popup_1d328358c505c7f55f1769721b0234e9)
+        ;
+
+        
+    
+    
+            var marker_b298287fe72c41a4a4e4206ea07b27fe = L.marker(
+                [36.028011, 129.32356],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_59714876d28abb58747d8c8a566f2c17 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_b298287fe72c41a4a4e4206ea07b27fe.setIcon(icon_59714876d28abb58747d8c8a566f2c17);
+        
+    
+        var popup_202e173ec3401b684d0c93423dd6c9be = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_88df3897e897533ee19e61cc6298ebb9 = $(`<div id="html_88df3897e897533ee19e61cc6298ebb9" style="width: 100.0%; height: 100.0%;">정류장: 롯데마트 포항점 주차장 <br> 주 소: 경상북도 포항시 남구 지곡동 659-1</div>`)[0];
+                popup_202e173ec3401b684d0c93423dd6c9be.setContent(html_88df3897e897533ee19e61cc6298ebb9);
+            
+        
+
+        marker_b298287fe72c41a4a4e4206ea07b27fe.bindPopup(popup_202e173ec3401b684d0c93423dd6c9be)
+        ;
+
+        
+    
+    
+            var marker_3bd9c59e9ce7f3e1151571f764a97102 = L.marker(
+                [36.0363, 129.31685],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_cd1d438c08e7be44ba3062390fb64c3c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_3bd9c59e9ce7f3e1151571f764a97102.setIcon(icon_cd1d438c08e7be44ba3062390fb64c3c);
+        
+    
+        var popup_e919575032f24729d9ed20fee4546eb7 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_4c04bf7b1df22e124ff74d620d045c99 = $(`<div id="html_4c04bf7b1df22e124ff74d620d045c99" style="width: 100.0%; height: 100.0%;">정류장: 테크노파크 제5벤처동 <br> 주 소: 경상북도 포항시 남구 지곡동 산116</div>`)[0];
+                popup_e919575032f24729d9ed20fee4546eb7.setContent(html_4c04bf7b1df22e124ff74d620d045c99);
+            
+        
+
+        marker_3bd9c59e9ce7f3e1151571f764a97102.bindPopup(popup_e919575032f24729d9ed20fee4546eb7)
+        ;
+
+        
+    
+    
+            var marker_d6caa03d4580c71a2860affdf9277555 = L.marker(
+                [36.0114, 129.31965],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_292c7c712b86057cd26bde0b24c4daae = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_d6caa03d4580c71a2860affdf9277555.setIcon(icon_292c7c712b86057cd26bde0b24c4daae);
+        
+    
+        var popup_c6f5e56e421acdf8a7d0dbdbfd7b7017 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_368e28a878e528c6d89dfe4aebfaeb8c = $(`<div id="html_368e28a878e528c6d89dfe4aebfaeb8c" style="width: 100.0%; height: 100.0%;">정류장: LG연구동 <br> 주 소: 경상북도 포항시 남구 효자동 산27</div>`)[0];
+                popup_c6f5e56e421acdf8a7d0dbdbfd7b7017.setContent(html_368e28a878e528c6d89dfe4aebfaeb8c);
+            
+        
+
+        marker_d6caa03d4580c71a2860affdf9277555.bindPopup(popup_c6f5e56e421acdf8a7d0dbdbfd7b7017)
+        ;
+
+        
+    
+    
+            var marker_5aaf433611c047a90f87e53e6cc73d0d = L.marker(
+                [36.02424, 129.31296],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_84af74b3598ac1861222ec836db6e304 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_5aaf433611c047a90f87e53e6cc73d0d.setIcon(icon_84af74b3598ac1861222ec836db6e304);
+        
+    
+        var popup_39b3d5f1deba0e4bee99a5f246fd57c9 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_fe49ad84fb44124ce2c7b65d0a81a8ec = $(`<div id="html_fe49ad84fb44124ce2c7b65d0a81a8ec" style="width: 100.0%; height: 100.0%;">정류장: IBS포스텍캠퍼스 <br> 주 소: 경상북도 포항시 남구 지곡동 784</div>`)[0];
+                popup_39b3d5f1deba0e4bee99a5f246fd57c9.setContent(html_fe49ad84fb44124ce2c7b65d0a81a8ec);
+            
+        
+
+        marker_5aaf433611c047a90f87e53e6cc73d0d.bindPopup(popup_39b3d5f1deba0e4bee99a5f246fd57c9)
+        ;
+
+        
+    
+    
+            var marker_12e4128ca336e273c07a5c586bf015f7 = L.marker(
+                [36.016208, 129.326143],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_3c6726ba61b43eae5d16f09ba7f17d19 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_12e4128ca336e273c07a5c586bf015f7.setIcon(icon_3c6726ba61b43eae5d16f09ba7f17d19);
+        
+    
+        var popup_2dc6809be36361a9c6451b7b1044bc6e = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_463bc4895cf82db3e876c59a63ea0467 = $(`<div id="html_463bc4895cf82db3e876c59a63ea0467" style="width: 100.0%; height: 100.0%;">정류장: 낙원아파트 주차장 <br> 주 소: 경상북도 포항시 남구 지곡동 110-2</div>`)[0];
+                popup_2dc6809be36361a9c6451b7b1044bc6e.setContent(html_463bc4895cf82db3e876c59a63ea0467);
+            
+        
+
+        marker_12e4128ca336e273c07a5c586bf015f7.bindPopup(popup_2dc6809be36361a9c6451b7b1044bc6e)
+        ;
+
+        
+    
+    
+            var marker_77ae3da504e72c56dbdc42274f4dc124 = L.marker(
+                [36.03581, 129.31454],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_d082adfa87a50555763fc5073b7108f0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_77ae3da504e72c56dbdc42274f4dc124.setIcon(icon_d082adfa87a50555763fc5073b7108f0);
+        
+    
+        var popup_b223bc879a3eb40375bc0cc449c75c8a = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_f9f1a6c030c7558da7548bfeb928f0de = $(`<div id="html_f9f1a6c030c7558da7548bfeb928f0de" style="width: 100.0%; height: 100.0%;">정류장: 테크노파크 본부동 <br> 주 소: 경상북도 포항시 남구 지곡동 산116</div>`)[0];
+                popup_b223bc879a3eb40375bc0cc449c75c8a.setContent(html_f9f1a6c030c7558da7548bfeb928f0de);
+            
+        
+
+        marker_77ae3da504e72c56dbdc42274f4dc124.bindPopup(popup_b223bc879a3eb40375bc0cc449c75c8a)
+        ;
+
+        
+    
+    
+            var marker_cfd1c748b3371c0ffd93822452173e00 = L.marker(
+                [36.01826, 129.32351],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_6e464a5adc50e91b06ba06dc2573a968 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_cfd1c748b3371c0ffd93822452173e00.setIcon(icon_6e464a5adc50e91b06ba06dc2573a968);
+        
+    
+        var popup_7d4a88f8c33a9e18306ae7ec758790e9 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_ae3dc196ae2c00069f8eff05768f8761 = $(`<div id="html_ae3dc196ae2c00069f8eff05768f8761" style="width: 100.0%; height: 100.0%;">정류장: 대학체육관 <br> 주 소: 경상북도 포항시 남구 지곡동 산263</div>`)[0];
+                popup_7d4a88f8c33a9e18306ae7ec758790e9.setContent(html_ae3dc196ae2c00069f8eff05768f8761);
+            
+        
+
+        marker_cfd1c748b3371c0ffd93822452173e00.bindPopup(popup_7d4a88f8c33a9e18306ae7ec758790e9)
+        ;
+
+        
+    
+    
+            var marker_3d1c27b3fb7915203b05f54d1fbb4f02 = L.marker(
+                [36.01261, 129.32326],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_50f3d76792546c54c0e2286e732994d9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_3d1c27b3fb7915203b05f54d1fbb4f02.setIcon(icon_50f3d76792546c54c0e2286e732994d9);
+        
+    
+        var popup_04ee9854de1f79d5608115bdd60e27b6 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_0fc32e1eb0da906903200da27bfb0d5e = $(`<div id="html_0fc32e1eb0da906903200da27bfb0d5e" style="width: 100.0%; height: 100.0%;">정류장: 체인지업그라운드 <br> 주 소: 경상북도 포항시 남구 지곡동 176</div>`)[0];
+                popup_04ee9854de1f79d5608115bdd60e27b6.setContent(html_0fc32e1eb0da906903200da27bfb0d5e);
+            
+        
+
+        marker_3d1c27b3fb7915203b05f54d1fbb4f02.bindPopup(popup_04ee9854de1f79d5608115bdd60e27b6)
+        ;
+
+        
+    
+    
+            var marker_848948354c3293e15cd2933154bd849d = L.marker(
+                [36.06177, 129.31763],
+                {}
+            ).addTo(map_8f4b778e583c47accb39ad005ba8116f);
+        
+    
+            var icon_dbaa311259e27bfb736eb96593950961 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "beige", "prefix": "glyphicon"}
+            );
+            marker_848948354c3293e15cd2933154bd849d.setIcon(icon_dbaa311259e27bfb736eb96593950961);
+        
+    
+        var popup_fda9dc1aa62bd60c27e0ec0607debd01 = L.popup({"maxWidth": 300, "minWidth": 200});
+
+        
+            
+                var html_69efccd80aae417f8208561fdbd9ba02 = $(`<div id="html_69efccd80aae417f8208561fdbd9ba02" style="width: 100.0%; height: 100.0%;">정류장: 포항시지식산업센터 <br> 주 소: 경상북도 포항시 북구 흥해읍 이인리 산64-2</div>`)[0];
+                popup_fda9dc1aa62bd60c27e0ec0607debd01.setContent(html_69efccd80aae417f8208561fdbd9ba02);
+            
+        
+
+        marker_848948354c3293e15cd2933154bd849d.bindPopup(popup_fda9dc1aa62bd60c27e0ec0607debd01)
+        ;
+
+        
+    
+    
+            var marker_cluster_3247d33f8939aa00d9db4e47cb3b7688 = L.markerClusterGroup(
+                {}
+            );
+            map_8f4b778e583c47accb39ad005ba8116f.addLayer(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_a365fb003af7e88435e21969a4215737 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_1114419089333801661275a9035c963a = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_db4e27e616304678bbe25d7ba9315778 = L.marker(
+                [37.5220284965757, 126.925691860071],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_5e4ca9fa4f1e1e902894140df11beb6e = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_4b8f48aca6e8a82465cefffaa2d60344 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_308db8bd8ab94689e54de5a2e223dbc1 = L.marker(
+                [36.0519, 129.3152],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_e05fce7fb96afc4f69858e6ddee763d4 = L.marker(
+                [36.01899, 129.323032],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_0ef34b4174e51ddaa2e8ddf69017745e = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_6148a6bcf9ab558b8e083d1e4da9def6 = L.marker(
+                [36.02766, 129.31196],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_76e3f4b6292252cb26dfdc2489ae3949 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_b76a7053356c78595d617b4a19d1a4aa = L.marker(
+                [36.01565, 129.32188],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_01a481e5b0d641652cc9454995699b68 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_c7caaa93abea990efa8103656ee5b188 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_0e110f762794298202af9295f9441087 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_c557b66e60e918f5e882971ef319ca6e = L.marker(
+                [36.01238, 129.31938],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_c3c8cbbb9703e5372b26239a4ea15d0f = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_41e4b2c803fcc9ea5dbf6063db7b8e8f = L.marker(
+                [36.00843, 129.32376],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_5002bdeb5fb45e6285eb9ca7a1601af8 = L.marker(
+                [36.01007, 129.32139],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_177a5d8032e7a716ba6aeeafa2a3230d = L.marker(
+                [37.5215695, 126.9243115],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_ea49ce5420a2f291c7f031a380ead958 = L.marker(
+                [36.01317, 129.32049],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_43e300038b280f66ccb79d35a89e41ab = L.marker(
+                [36.02254, 129.31687],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_6ce0eb257fb64b671462484d21cb450e = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_7f2eabb0057470c65e14ad593517bba4 = L.marker(
+                [36.035127, 129.314521],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_079d0a4198382a656cd3f0c8fd863f4a = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_96ee0028f108e101b5073c5734b5786e = L.marker(
+                [36.01565, 129.32188],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_04f6489894ea8478f263d11100e06d90 = L.marker(
+                [36.0519, 129.3152],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_74ffcf136d1202d605b2cfd9303d5ea7 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_161aa5a712dfb54ec7ddac89fd79263a = L.marker(
+                [36.035127, 129.314521],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_16b386ef2f3c38094180e080ae0e3add = L.marker(
+                [36.02017, 129.31996],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_8020fb261c193d8a4e9bc6630b4ddeb9 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_e50d2cc0fe2f34282145b0cdfa5de87f = L.marker(
+                [36.0519, 129.3152],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_6494ca9276ce4a6a744616b857f558df = L.marker(
+                [36.01738, 129.32898],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_b6ce05265da82b7cfb43659b8509616b = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_4cf6849301cc2e7cb20621c7055dc61a = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_de7dd47e7ae7ee71410efaef99741bfa = L.marker(
+                [36.0, 126.926177017494],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_753be57c939f34f83d3d34677ea0ee98 = L.marker(
+                [36.01565, 129.32188],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_ee43d9e73706d3add2cc2ec5ba94a53f = L.marker(
+                [36.012295, 129.32558],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_0044a7e7e31a8a4344ca21ab5eaafe8f = L.marker(
+                [36.01393, 129.32124],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_2578688b527aef56dc01ea7afdc0260c = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_2d8b734b530bc479474ac5fe13782d14 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_c60b10edea2bdf146122948b66157c30 = L.marker(
+                [36.027674, 129.311972],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_639178bc5a9b526533222d1ec3044558 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_9cbea06ea010c104b6b1da21d08e9f23 = L.marker(
+                [36.02254, 129.31687],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_5c6f7f53bfd169532df6fe5f5746c700 = L.marker(
+                [36.028011, 129.32356],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_11e5b2a1c798eb488f2344292463ba34 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_b73f6a6e8b8b7689b345b83d1b9d0b44 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_669e17b426c3af30da4011ba4b89fb55 = L.marker(
+                [36.0363, 129.31685],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_9193f7863912be29191242112398b31b = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_d258d8b0503685d5ae8e956af54ef177 = L.marker(
+                [36.0114, 129.31965],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_94d7ba1783eaa8a736964dbdc9493451 = L.marker(
+                [36.02424, 129.31296],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_791d2887c12241967a7e24fa31fff30d = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_932e2d60c8a2e68b8d61cf84c42c123a = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_4f5772087901bf644e08d8b56f775ab1 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_2152156172c93925b0234a08e562e06e = L.marker(
+                [36.016208, 129.326143],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_842ff1db71ce8601d721b72f03505dc9 = L.marker(
+                [37.5215695, 126.9243115],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_0398c84c91b3f43901e7655594bdfadf = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_04046bdb569c2dfadc6b55fb8847e763 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_4a2de8ce24c3c23abd5244e862c32546 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_27cfb39532807e5c72e2d9369e100356 = L.marker(
+                [37.5302062943954, 126.926177017494],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_37b15f6ed58eee0df9dfb27394327378 = L.marker(
+                [36.03581, 129.31454],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_b8882fa1c3f8870944f50024aee880e5 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_b5b57ad75838da25f52b87f120296e23 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_2ad00825aa419777eea710ea0167aee2 = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_ccdf002282124a474588b958da241c1e = L.marker(
+                [36.01826, 129.32351],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_0b6bb2f74be2ce47093ac5b2d9a9a9c5 = L.marker(
+                [36.01261, 129.32326],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_db79f04526edf2a9463acefebf530d48 = L.marker(
+                [36.032167, 129.311554],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_9417ebeb810a690cbce3f954d84d78d7 = L.marker(
+                [36.06177, 129.31763],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_74bc4b14adfa560aff19e95ac3c3bcf6 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_15da49b2a0cb42976731d6ab9d84f6a9 = L.marker(
+                [36.02108, 129.31881],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_8162a6e6dee15079b72f11025be2aff1 = L.marker(
+                [37.525344, 126.933678],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_27d8dc5a26a71c338180729a195cf04b = L.marker(
+                [37.51737287009036, 126.9283750591322],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_e05cb25dd5ecfd6007872905146aab5d = L.marker(
+                [36.0, 127.0],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+            var marker_dfbc90817fc7fb4cf6658ed9c959edc4 = L.marker(
+                [37.5211700890445, 126.92466104293],
+                {}
+            ).addTo(marker_cluster_3247d33f8939aa00d9db4e47cb3b7688);
+        
+    
+                var lat_lng_popup_a63fc1bff287f26e87988287e0d26c94 = L.popup();
+                function latLngPop(e) {
+                    lat_lng_popup_a63fc1bff287f26e87988287e0d26c94
+                        .setLatLng(e.latlng)
+                        .setContent("Latitude: " + e.latlng.lat.toFixed(4) +
+                                    "<br>Longitude: " + e.latlng.lng.toFixed(4))
+                        .openOn(map_8f4b778e583c47accb39ad005ba8116f);
+                    }
+                map_8f4b778e583c47accb39ad005ba8116f.on('click', latLngPop);
+            
+</script>
+</html>
